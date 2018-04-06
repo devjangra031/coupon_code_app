@@ -4,14 +4,16 @@ Ruby version :-  2.1.0
 
 Commands to run
 
-```bundle install```
+bundle install
 
 open rails_console and run
-```CouponType.create(name: "Percentage")
+
+CouponType.create(name: "Percentage")
 CouponType.create(name: "Discount")
 CouponType.create(name: "Discount&Cashback")
 CouponType.create(name: "Percentage&Cashback")
 CouponType.create(name: "BOGO")
+
 10.times do
 Outlet.create(name: Faker::Company.name)
-end```
+end
