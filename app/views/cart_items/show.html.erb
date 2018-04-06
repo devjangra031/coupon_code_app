@@ -1,0 +1,23 @@
+<table id="card_items">
+  <tr>
+    <th>Product</th>
+    <th>Qty</th>
+    <th class="price">Unit Price</th>
+    <th class="price">Full Price</th>
+  </tr>
+
+  <% for product in @cart.products %>
+    <tr class="<%= cycle :odd, :even %>">
+      <td><%= product.name %></td>
+      <td class="qty"><%= product.quantity %></td>
+      <td class="price"><%= product.unit_price %></td>
+      <td class="price"><%= product.full_price %></td>
+    </tr>
+  <% end %>
+
+  <tr>
+    <td class="total price" colspan="4">
+      Total: <%= @cart.total_price %>
+    </td>
+  </tr>
+</table>

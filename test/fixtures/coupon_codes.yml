@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: 
+  type: 
+  value: 1
+  cashback_value: 1
+  start_date: 
+  end_date: 
+  active: false
+  applicable_outlet_ids: 
+  minimum_delivery_amount_after_discount: 1
+  maximum_discount: 1
+
+two:
+  code: 
+  type: 
+  value: 1
+  cashback_value: 1
+  start_date: 
+  end_date: 
+  active: false
+  applicable_outlet_ids: 
+  minimum_delivery_amount_after_discount: 1
+  maximum_discount: 1

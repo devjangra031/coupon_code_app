@@ -1,0 +1,47 @@
+<div class="page-header">
+  <%= link_to new_coupon_code_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Coupon code
+  <% end %>
+  <h1>Listing coupon_codes</h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Code</th>
+            <th>Type</th>
+            <th>Value</th>
+            <th>Cashback value</th>
+            <th>Start date</th>
+            <th>End date</th>
+            <th>Active</th>
+            <th>Applicable outlet ids</th>
+            <th>Minimum delivery amount after discount</th>
+            <th>Maximum discount</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @coupon_codes) do |coupon_code| %>
+            <td><%= coupon_code.code %></td>
+            <td><%= coupon_code.type %></td>
+            <td><%= coupon_code.value %></td>
+            <td><%= coupon_code.cashback_value %></td>
+            <td><%= coupon_code.start_date %></td>
+            <td><%= coupon_code.end_date %></td>
+            <td><%= coupon_code.active %></td>
+            <td><%= coupon_code.applicable_outlet_ids %></td>
+            <td><%= coupon_code.minimum_delivery_amount_after_discount %></td>
+            <td><%= coupon_code.maximum_discount %></td>
+            <td><%= link_to 'Show', coupon_code %></td>
+        <td><%= link_to 'Edit', edit_coupon_code_path(coupon_code) %></td>
+        <td><%= link_to 'Destroy', coupon_code, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,1 @@
+json.extract! @coupon_code, :id, :code, :type, :value, :cashback_value, :start_date, :end_date, :active, :applicable_outlet_ids, :minimum_delivery_amount_after_discount, :maximum_discount, :created_at, :updated_at
